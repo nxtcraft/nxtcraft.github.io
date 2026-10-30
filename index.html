@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NxtCraft – Free Online Tools for Everyone</title>
+<meta name="description" content="NxtCraft offers free online tools for developers, writers, traders, shop owners and students. No signup, no ads in the way, no paywall. Tools that just work.">
+<meta name="keywords" content="free online tools, free web tools, free developer tools, free pdf tools, word counter, emi calculator, qr code generator, invoice generator, resume maker">
+<link rel="canonical" href="https://nxtcraft.github.io/">
+<meta property="og:title" content="NxtCraft – Free Online Tools for Everyone">
+<meta property="og:description" content="9 free tools: PDF toolkit, word counter, EMI calculator, QR code generator, invoice maker, resume builder, shop billing, trading calculators and developer tools.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nxtcraft.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NxtCraft – Free Online Tools for Everyone">
+<meta name="twitter:description" content="Free tools: PDF, word counter, EMI calculator, QR codes, invoice, resume, billing, trading calculators, dev tools.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NxtCraft",
+  "url": "https://nxtcraft.github.io/",
+  "description": "Free online tools for developers, writers, traders, shop owners and students.",
+  "potentialAction": { "@type": "SearchAction", "target": "https://nxtcraft.github.io/?q={search_term_string}", "query-input": "required name=search_term_string" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Free Online Tools by NxtCraft",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "PDFCraft – PDF Tools", "url": "https://nxtcraft.github.io/pdfcraft/" },
+    { "@type": "ListItem", "position": 2, "name": "WordKit – Word Counter", "url": "https://nxtcraft.github.io/wordkit/" },
+    { "@type": "ListItem", "position": 3, "name": "EMICalc – Loan EMI Calculator", "url": "https://nxtcraft.github.io/emicalc/" },
+    { "@type": "ListItem", "position": 4, "name": "QRCraft – QR Code Generator", "url": "https://nxtcraft.github.io/qrcraft/" },
+    { "@type": "ListItem", "position": 5, "name": "InvoiceKit – Invoice Generator", "url": "https://nxtcraft.github.io/invoicekit/" },
+    { "@type": "ListItem", "position": 6, "name": "ResumeKit – Resume Builder", "url": "https://nxtcraft.github.io/resumekit/" },
+    { "@type": "ListItem", "position": 7, "name": "ShopBook – Shop Billing", "url": "https://nxtcraft.github.io/shopbook/" },
+    { "@type": "ListItem", "position": 8, "name": "TradeCalc – Trading Calculators", "url": "https://nxtcraft.github.io/tradecalc/" },
+    { "@type": "ListItem", "position": 9, "name": "DevToolbox – Developer Tools", "url": "https://nxtcraft.github.io/devtoolbox/" }
+  ]
+}
+</script>
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #0f172a; --surface: #1e293b; --border: #334155;
+  --text: #f1f5f9; --muted: #94a3b8; --accent: #38bdf8;
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+header { text-align: center; padding: 48px 20px 32px; }
+.logo { font-size: 32px; font-weight: 900; letter-spacing: -1px; }
+.logo span { color: var(--accent); }
+header p { font-size: 16px; color: var(--muted); margin-top: 8px; max-width: 480px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+
+.badge-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 16px; }
+.badge { background: #1e293b; border: 1px solid #334155; border-radius: 20px; padding: 5px 14px; font-size: 12px; color: var(--muted); }
+
+.container { max-width: 960px; margin: 0 auto; padding: 0 16px 60px; }
+
+.section-title { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin: 32px 0 14px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+
+.tool-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 18px; text-decoration: none; color: var(--text);
+  display: flex; align-items: flex-start; gap: 14px;
+  transition: border-color .15s, transform .15s;
+}
+.tool-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.tool-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+.tool-info { flex: 1; min-width: 0; }
+.tool-name { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
+.tool-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
+.tool-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.tag { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; }
+
+.search-wrap { max-width: 480px; margin: 0 auto 24px; position: relative; }
+.search-wrap input { width: 100%; padding: 13px 16px 13px 44px; border: 1.5px solid var(--border); border-radius: 12px; font-size: 15px; background: var(--surface); color: var(--text); outline: none; }
+.search-wrap input:focus { border-color: var(--accent); }
+.search-wrap input::placeholder { color: var(--muted); }
+.search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 18px; }
+
+.seo-section { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
+.seo-section h2 { font-size: 18px; font-weight: 800; margin-bottom: 10px; }
+.seo-section p, .seo-section li { font-size: 14px; color: var(--muted); line-height: 1.7; }
+.seo-section ul { padding-left: 20px; margin-bottom: 12px; }
+
+footer { text-align: center; padding: 24px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Nxt<span>Craft</span></div>
+  <p>Free online tools that just work — no signup, no paywall, no nonsense.</p>
+  <div class="badge-row">
+    <span class="badge">✅ 100% Free</span>
+    <span class="badge">🔒 Privacy First</span>
+    <span class="badge">⚡ Works Offline</span>
+    <span class="badge">📱 Mobile Friendly</span>
+    <span class="badge">🚫 No Signup</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="search" placeholder="Search tools..." oninput="filterTools(this.value)">
+  </div>
+
+  <div class="section-title">📄 Document & File Tools</div>
+  <div class="grid" id="grid-docs">
+    <a class="tool-card" href="pdfcraft/" data-tags="pdf merge split compress rotate image convert">
+      <div class="tool-icon" style="background:#fff1f2;">📄</div>
+      <div class="tool-info">
+        <div class="tool-name">PDFCraft</div>
+        <div class="tool-desc">Merge, split, compress, rotate PDFs and convert images to PDF. Files never leave your device.</div>
+        <div class="tool-tags"><span class="tag" style="background:#fff1f2;color:#e11d48;">PDF</span><span class="tag" style="background:#fff1f2;color:#e11d48;">Files</span></div>
+      </div>
+    </a>
+    <a class="tool-card" href="wordkit/" data-tags="word count character counter reading time text case converter sort">
+      <div class="tool-icon" style="background:#f0fdf4;">📝</div>
+      <div class="tool-info">
+        <div class="tool-name">WordKit</div>
+        <div class="tool-desc">Word counter, character counter, reading time, case converter, sort lines and keyword density.</div>
+        <div class="tool-tags"><span class="tag" style="background:#f0fdf4;color:#059669;">Writing</span><span class="tag" style="background:#f0fdf4;color:#059669;">Text</span></div>
+      </div>
+    </a>
+    <a class="tool-card" href="invoicekit/" data-tags="invoice generator pdf free gst billing freelancer">
+      <div class="tool-icon" style="background:#f0f9ff;">🧾</div>
+      <div class="tool-info">
+        <div class="tool-name">InvoiceKit</div>
+        <div class="tool-desc">Create professional invoices with GST, line items, discounts and download as PDF instantly.</div>
+        <div class="tool-tags"><span class="tag" style="background:#f0f9ff;color:#0284c7;">Invoice</span><span class="tag" style="background:#f0f9ff;color:#0284c7;">Business</span></div>
+      </div>
+    </a>
+    <a class="tool-card" href="resumekit/" data-tags="resume builder biodata maker cv template pdf download">
+      <div class="tool-icon" style="background:#faf5ff;">👤</div>
+      <div class="tool-info">
+        <div class="tool-name">ResumeKit</div>
+        <div class="tool-desc">Build a professional resume or biodata with 3 templates, live preview and PDF download.</div>
+        <div class="tool-tags"><span class="tag" style="background:#faf5ff;color:#7c3aed;">Resume</span><span class="tag" style="background:#faf5ff;color:#7c3aed;">Career</span></div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-title">💰 Finance & Business Tools</div>
+  <div class="grid" id="grid-finance">
+    <a class="tool-card" href="emicalc/" data-tags="emi calculator home loan car loan personal loan amortization india">
+      <div class="tool-icon" style="background:#eef2ff;">🏦</div>
+      <div class="tool-info">
+        <div class="tool-name">EMICalc</div>
+        <div class="tool-desc">Calculate EMI for home loan, car loan and personal loan with full amortization schedule.</div>
+        <div class="tool-tags"><span class="tag" style="background:#eef2ff;color:#4f46e5;">Finance</span><span class="tag" style="background:#eef2ff;color:#4f46e5;">Loans</span></div>
+      </div>
+    </a>
+    <a class="tool-card" href="tradecalc/" data-tags="trading calculator position size risk reward brokerage sip compound india">
+      <div class="tool-icon" style="background:#f0fdf4;">📈</div>
+      <div class="tool-info">
+        <div class="tool-name">TradeCalc</div>
+        <div class="tool-desc">8 trading calculators: position size, risk/reward, brokerage (NSE/BSE), SIP, lot size and more.</div>
+        <div class="tool-tags"><span class="tag" style="background:#f0fdf4;color:#15803d;">Trading</span><span class="tag" style="background:#f0fdf4;color:#15803d;">Finance</span></div>
+      </div>
+    </a>
+    <a class="tool-card" href="shopbook/" data-tags="shop billing inventory management kirana dukaan gst receipt offline">
+      <div class="tool-icon" style="background:#fff7ed;">🛒</div>
+      <div class="tool-info">
+        <div class="tool-name">ShopBook</div>
+        <div class="tool-desc">Free billing and inventory app for small shops. Works offline, print receipts, GST support.</div>
+        <div class="tool-tags"><span class="tag" style="background:#fff7ed;color:#ea580c;">Billing</span><span class="tag" style="background:#fff7ed;color:#ea580c;">Shop</span></div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-title">🛠 Utility Tools</div>
+  <div class="grid" id="grid-utility">
+    <a class="tool-card" href="qrcraft/" data-tags="qr code generator url wifi vcard contact email phone free">
+      <div class="tool-icon" style="background:#ecfeff;">⬛</div>
+      <div class="tool-info">
+        <div class="tool-name">QRCraft</div>
+        <div class="tool-desc">Generate QR codes for URL, WiFi, contact, email, phone, SMS — free, no watermark, instant download.</div>
+        <div class="tool-tags"><span class="tag" style="background:#ecfeff;color:#0891b2;">QR Code</span><span class="tag" style="background:#ecfeff;color:#0891b2;">Utility</span></div>
+      </div>
+    </a>
+    <a class="tool-card" href="devtoolbox/" data-tags="developer tools json formatter regex uuid base64 jwt hash url encoder css color">
+      <div class="tool-icon" style="background:#1e293b; border:1px solid #334155;">⚙️</div>
+      <div class="tool-info">
+        <div class="tool-name">DevToolbox</div>
+        <div class="tool-desc">14 developer tools: JSON formatter, regex tester, JWT decoder, UUID generator, Base64, hash and more.</div>
+        <div class="tool-tags"><span class="tag" style="background:#334155;color:#94a3b8;">Dev</span><span class="tag" style="background:#334155;color:#94a3b8;">Tools</span></div>
+      </div>
+    </a>
+  </div>
+
+  <div class="seo-section">
+    <h2>Free Online Tools — No Signup, No Paywall</h2>
+    <p>NxtCraft is a collection of free browser-based tools for everyday use. Every tool works directly in your browser — no data is ever uploaded to a server. Your files, text, and data stay private on your device.</p>
+    <ul style="margin-top:10px;">
+      <li><strong>PDFCraft</strong> — merge, split, compress, rotate PDFs and convert images</li>
+      <li><strong>WordKit</strong> — word counter, character count, reading time, text tools</li>
+      <li><strong>EMICalc</strong> — home loan, car loan, personal loan EMI with amortization table</li>
+      <li><strong>QRCraft</strong> — QR codes for URL, WiFi, contact, email and more</li>
+      <li><strong>InvoiceKit</strong> — professional invoices with GST, PDF download</li>
+      <li><strong>ResumeKit</strong> — resume and biodata builder with PDF export</li>
+      <li><strong>ShopBook</strong> — offline billing and inventory for small shop owners</li>
+      <li><strong>TradeCalc</strong> — trading and investment calculators for Indian market</li>
+      <li><strong>DevToolbox</strong> — 14 tools for developers: JSON, regex, JWT, UUID, hash</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>&copy; 2025 NxtCraft · All tools are free forever</footer>
+
+<script>
+function filterTools(q) {
+  const term = q.toLowerCase();
+  document.querySelectorAll('.tool-card').forEach(card => {
+    const text = (card.textContent + ' ' + (card.dataset.tags || '')).toLowerCase();
+    card.style.display = text.includes(term) ? 'flex' : 'none';
+  });
+}
+</script>
+</body>
+</html>
