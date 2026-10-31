@@ -123,7 +123,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
 <div class="container">
 
   <div class="stats-bar">
-    <div class="stat-item"><div class="stat-n">18</div><div class="stat-l">Tools</div></div>
+    <div class="stat-item"><div class="stat-n">21</div><div class="stat-l">Products</div></div>
     <div class="stat-item"><div class="stat-n">8</div><div class="stat-l">Categories</div></div>
     <div class="stat-item"><div class="stat-n">0</div><div class="stat-l">Signups needed</div></div>
     <div class="stat-item"><div class="stat-n">$0</div><div class="stat-l">Forever free</div></div>
@@ -135,7 +135,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
   </div>
 
   <div class="filter-row">
-    <button class="chip active" onclick="filterCat('all',this)">All (18)</button>
+    <button class="chip active" onclick="filterCat('all',this)">All (21)</button>
     <button class="chip" onclick="filterCat('documents',this)">📄 Documents</button>
     <button class="chip" onclick="filterCat('finance',this)">💰 Finance</button>
     <button class="chip" onclick="filterCat('image',this)">🖼️ Image & Design</button>
@@ -143,6 +143,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
     <button class="chip" onclick="filterCat('developer',this)">⚙️ Developer</button>
     <button class="chip" onclick="filterCat('ai',this)">🤖 AI</button>
     <button class="chip" onclick="filterCat('india',this)">🇮🇳 India</button>
+    <button class="chip" onclick="filterCat('api',this)">🔌 APIs</button>
   </div>
 
   <!-- DOCUMENTS -->
@@ -218,7 +219,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
         <div class="tool-icon" style="background:#0f1f12;">📈</div>
         <div class="tool-info">
           <div class="tool-name">TradeCalc</div>
-          <div class="tool-desc">8 trading calculators — position size, risk/reward, brokerage (NSE/BSE), SIP, lot size and more.</div>
+          <div class="tool-desc">Position size, risk/reward, brokerage (NSE/BSE), SIP, compound, lot size and more trading calculators.</div>
           <div class="tool-tags"><span class="tag" style="background:#0f2214;color:#34d399;">Trading</span><span class="tag" style="background:#0f2214;color:#34d399;">Stocks</span></div>
         </div>
       </a>
@@ -246,7 +247,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
         <div class="tool-icon" style="background:#1e1b2e;">🖼️</div>
         <div class="tool-info">
           <div class="tool-name">ImgLab</div>
-          <div class="tool-desc">5 image tools: AI background remover, compressor, resizer, format converter, passport photo maker.</div>
+          <div class="tool-desc">AI background remover, image compressor, resizer, format converter and passport photo maker. No upload.</div>
           <div class="tool-tags"><span class="tag" style="background:#2d1b4e;color:#c084fc;">Image</span><span class="tag" style="background:#2d1b4e;color:#c084fc;">AI</span></div>
         </div>
       </a>
@@ -254,7 +255,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
         <div class="tool-icon" style="background:#1f1020;">🎨</div>
         <div class="tool-info">
           <div class="tool-name">Huelab</div>
-          <div class="tool-desc">5 color tools: palette from image, gradient maker, contrast checker (WCAG), color converter, mixer.</div>
+          <div class="tool-desc">Color palette from image, CSS gradient maker, WCAG contrast checker, color converter and mixer.</div>
           <div class="tool-tags"><span class="tag" style="background:#2d0f1e;color:#fb7185;">Color</span><span class="tag" style="background:#2d0f1e;color:#fb7185;">Design</span></div>
         </div>
         <span class="new-badge">NEW</span>
@@ -275,7 +276,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
         <div class="tool-icon" style="background:#0e1f1d;">🎬</div>
         <div class="tool-info">
           <div class="tool-name">ClipLab</div>
-          <div class="tool-desc">7 video tools: trim, compress, convert, mute, slow motion, add audio, extract audio. No upload needed.</div>
+          <div class="tool-desc">Trim, compress, convert formats, mute, slow motion, add audio and extract audio — all in browser.</div>
           <div class="tool-tags"><span class="tag" style="background:#0d2321;color:#2dd4bf;">Video</span><span class="tag" style="background:#0d2321;color:#2dd4bf;">Editor</span></div>
         </div>
       </a>
@@ -283,7 +284,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
         <div class="tool-icon" style="background:#1f1a0d;">🎧</div>
         <div class="tool-info">
           <div class="tool-name">AudioLab</div>
-          <div class="tool-desc">5 audio tools: cut MP3, convert format, make ringtone, boost volume, merge files. No upload needed.</div>
+          <div class="tool-desc">Cut MP3, convert audio format, make ringtone with fade, boost volume and merge audio — in browser.</div>
           <div class="tool-tags"><span class="tag" style="background:#2e1f08;color:#fbbf24;">Audio</span><span class="tag" style="background:#2e1f08;color:#fbbf24;">Editor</span></div>
         </div>
       </a>
@@ -303,7 +304,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
         <div class="tool-icon" style="background:#1a1f2e; border:1px solid #334155;">⚙️</div>
         <div class="tool-info">
           <div class="tool-name">DevLab</div>
-          <div class="tool-desc">14 developer tools: JSON formatter, regex tester, JWT decoder, UUID generator, Base64, hash and more.</div>
+          <div class="tool-desc">JSON formatter, regex tester, JWT decoder, UUID generator, Base64, hash generator and more dev tools.</div>
           <div class="tool-tags"><span class="tag" style="background:#1e2a3b;color:#60a5fa;">Dev</span><span class="tag" style="background:#1e2a3b;color:#60a5fa;">Code</span></div>
         </div>
       </a>
@@ -311,7 +312,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
         <div class="tool-icon" style="background:#0e1f1d;">⚡</div>
         <div class="tool-info">
           <div class="tool-name">MiniTools</div>
-          <div class="tool-desc">9 everyday utilities: image compressor, unit converter, % calculator, Base64 encoder and more.</div>
+          <div class="tool-desc">Image compressor, unit converter, percentage calculator, Base64 encoder, case converter and more.</div>
           <div class="tool-tags"><span class="tag" style="background:#0d2321;color:#2dd4bf;">Utility</span><span class="tag" style="background:#0d2321;color:#2dd4bf;">Tools</span></div>
         </div>
       </a>
@@ -387,9 +388,48 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
         <div class="tool-icon" style="background:#0f1f14;">📬</div>
         <div class="tool-info">
           <div class="tool-name">SaasDeals Weekly</div>
-          <div class="tool-desc">5 curated SaaS lifetime deals every Tuesday — pay once, use forever. Free newsletter, no spam.</div>
+          <div class="tool-desc">Curated SaaS lifetime deals every Tuesday — pay once, use forever. Free newsletter, no spam.</div>
           <div class="tool-tags"><span class="tag" style="background:#0f2214;color:#34d399;">Newsletter</span><span class="tag" style="background:#0f2214;color:#34d399;">Free</span></div>
         </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- APIS -->
+  <div class="section-block" data-cat="api">
+    <div class="section-header">
+      <span class="section-icon">🔌</span>
+      <span class="section-name">APIs for Developers</span>
+      <span class="section-count">3 APIs</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="grid">
+      <a class="tool-card" href="https://saasscout.onrender.com" target="_blank" rel="noopener" data-tags="saas deals api lifetime deals api rapidapi rest json saasscout">
+        <div class="tool-icon" style="background:#0f1f14;">📡</div>
+        <div class="tool-info">
+          <div class="tool-name">SaasScout API</div>
+          <div class="tool-desc">REST API for SaaS lifetime deals data — search deals, filter by category, get top discounts. JSON output.</div>
+          <div class="tool-tags"><span class="tag" style="background:#0f2214;color:#34d399;">REST API</span><span class="tag" style="background:#0f2214;color:#34d399;">SaaS Data</span></div>
+        </div>
+        <span class="new-badge">API</span>
+      </a>
+      <a class="tool-card" href="https://salaryscout.onrender.com" target="_blank" rel="noopener" data-tags="salary data api india salary benchmark rapidapi rest json salaryscout">
+        <div class="tool-icon" style="background:#1a1f2e;">💼</div>
+        <div class="tool-info">
+          <div class="tool-name">SalaryScout API</div>
+          <div class="tool-desc">India salary benchmark data by role, city and experience level. Query via REST API, JSON output.</div>
+          <div class="tool-tags"><span class="tag" style="background:#1e2a3b;color:#60a5fa;">REST API</span><span class="tag" style="background:#1e2a3b;color:#60a5fa;">Salary Data</span></div>
+        </div>
+        <span class="new-badge">API</span>
+      </a>
+      <a class="tool-card" href="https://fundradar.onrender.com" target="_blank" rel="noopener" data-tags="startup funding api india startup funding rounds investors fundradar rapidapi">
+        <div class="tool-icon" style="background:#0f1a1f;">📊</div>
+        <div class="tool-info">
+          <div class="tool-name">FundRadar API</div>
+          <div class="tool-desc">India startup funding data — funding rounds, investors, amounts. REST API with JSON output.</div>
+          <div class="tool-tags"><span class="tag" style="background:#0d1f2a;color:#38bdf8;">REST API</span><span class="tag" style="background:#0d1f2a;color:#38bdf8;">Funding Data</span></div>
+        </div>
+        <span class="new-badge">API</span>
       </a>
     </div>
   </div>
