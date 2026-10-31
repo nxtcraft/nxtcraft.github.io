@@ -18,4 +18,6 @@
   <url><loc>https://nxtcraft.github.io/promptkit/marketing/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://nxtcraft.github.io/promptkit/coding/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://nxtcraft.github.io/promptkit/writing/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nxtcraft.github.io/about/</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://nxtcraft.github.io/privacy/</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
 </urlset>
