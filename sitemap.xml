@@ -14,4 +14,8 @@
   <url><loc>https://nxtcraft.github.io/taxcalc/hra/</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://nxtcraft.github.io/taxcalc/take-home/</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://nxtcraft.github.io/quicktools/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nxtcraft.github.io/promptkit/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nxtcraft.github.io/promptkit/marketing/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nxtcraft.github.io/promptkit/coding/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nxtcraft.github.io/promptkit/writing/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
 </urlset>
