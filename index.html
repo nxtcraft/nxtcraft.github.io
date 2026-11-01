@@ -8,7 +8,7 @@
 <script>!function(){var t=localStorage.getItem('nc_theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(t==='light')document.documentElement.setAttribute('data-theme','light');}();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NxtCraft – Free Online Tools for Everyone</title>
-<meta name="description" content="NxtCraft offers 23 free browser-based tools for PDF, finance, GST, SIP, salary slip, rent receipt, exam photo, image, video, audio, developer, AI and more. No signup, no paywall.">
+<meta name="description" content="NxtCraft offers 25 free browser-based tools for PDF, finance, GST, SIP, salary slip, rent receipt, exam photo, image, video, audio, developer, AI and more. No signup, no paywall.">
 <meta name="keywords" content="free online tools, free pdf tools, emi calculator, word counter, qr code generator, invoice generator, resume builder, income tax calculator, image compressor, mp3 cutter, video trimmer, password generator">
 <link rel="canonical" href="https://nxtcraft.github.io/">
 <meta property="og:title" content="NxtCraft – 21 Free Online Tools, No Signup">
@@ -28,7 +28,7 @@
   {"@type":"ListItem","position":8,"name":"ShopBook – Shop Billing","url":"https://nxtcraft.github.io/shopbook/"},
   {"@type":"ListItem","position":9,"name":"ImgLab – Image Tools","url":"https://nxtcraft.github.io/imglab/"},
   {"@type":"ListItem","position":10,"name":"Huelab – Color Tools","url":"https://nxtcraft.github.io/huelab/"},
-  {"@type":"ListItem","position":11,"name":"ClipLab – Video Editor","url":"https://nxtcraft.github.io/cliplab/"},
+  {"@type":"ListItem","position":11,"name":"VideoLab – Video Editor","url":"https://nxtcraft.github.io/cliplab/"},
   {"@type":"ListItem","position":12,"name":"AudioLab – Audio Editor","url":"https://nxtcraft.github.io/audiolab/"},
   {"@type":"ListItem","position":13,"name":"DevLab – Developer Tools","url":"https://nxtcraft.github.io/devlab/"},
   {"@type":"ListItem","position":14,"name":"MiniTools – Utility Tools","url":"https://nxtcraft.github.io/minitools/"},
@@ -40,7 +40,7 @@
   {"@type":"ListItem","position":20,"name":"SIPCalc – SIP & Mutual Fund Calculator","url":"https://nxtcraft.github.io/sipcalc/"},
   {"@type":"ListItem","position":21,"name":"Salary Slip Generator – Free Payslip Maker","url":"https://nxtcraft.github.io/salaryslip/"},
   {"@type":"ListItem","position":22,"name":"Rent Receipt Generator – Free HRA Rent Receipt India","url":"https://nxtcraft.github.io/rentreceipt/"},
-  {"@type":"ListItem","position":23,"name":"Exam Photo Resizer – SSC UPSC IBPS Photo Size","url":"https://nxtcraft.github.io/imglab/#exam"}
+  {"@type":"ListItem","position":24,"name":"Gratuity & Leave Encashment Calculator","url":"https://nxtcraft.github.io/gratuity/"},{"@type":"ListItem","position":25,"name":"EPF PPF SSY Calculator","url":"https://nxtcraft.github.io/pfcalc/"},{"@type":"ListItem","position":23,"name":"Exam Photo Resizer – SSC UPSC IBPS Photo Size","url":"https://nxtcraft.github.io/imglab/#exam"}
 ]}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -166,7 +166,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
   </div>
 
   <div class="filter-row">
-    <button class="chip active" onclick="filterCat('all',this)">All (23)</button>
+    <button class="chip active" onclick="filterCat('all',this)">All (25)</button>
     <button class="chip" onclick="filterCat('documents',this)">📄 Documents</button>
     <button class="chip" onclick="filterCat('finance',this)">💰 Finance</button>
     <button class="chip" onclick="filterCat('image',this)">🖼️ Image & Design</button>
@@ -299,6 +299,22 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
           <div class="tool-tags"><span class="tag" style="background:#2a1a08;color:#fb923c;">Billing</span><span class="tag" style="background:#2a1a08;color:#fb923c;">Shop</span></div>
         </div>
       </a>
+      <a class="tool-card" href="gratuity/" target="_blank" rel="noopener" data-tags="gratuity calculator india leave encashment calculator full final settlement f&f payment of gratuity act section 10 10aa">
+        <div class="tool-icon" style="background:#1a1200;">🏅</div>
+        <div class="tool-info">
+          <div class="tool-name">Gratuity Calc</div>
+          <div class="tool-desc">Calculate gratuity (15/26 formula), leave encashment (Section 10(10AA) ₹25L exemption), and full & final settlement.</div>
+          <div class="tool-tags"><span class="tag" style="background:#1a1200;color:#fbbf24;">Salary</span><span class="tag" style="background:#1a1200;color:#fbbf24;">Finance</span></div>
+        </div>
+      </a>
+      <a class="tool-card" href="pfcalc/" target="_blank" rel="noopener" data-tags="epf calculator ppf calculator ssy calculator sukanya samriddhi yojana provident fund interest 2024 maturity">
+        <div class="tool-icon" style="background:#041a18;">💰</div>
+        <div class="tool-info">
+          <div class="tool-name">EPF · PPF · SSY</div>
+          <div class="tool-desc">Year-by-year EPF, PPF and Sukanya Samriddhi Yojana maturity calculator with employer contribution breakdown.</div>
+          <div class="tool-tags"><span class="tag" style="background:#042018;color:#2dd4bf;">Savings</span><span class="tag" style="background:#042018;color:#2dd4bf;">Finance</span></div>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -353,7 +369,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
       <a class="tool-card" href="cliplab/" target="_blank" rel="noopener" data-tags="trim video online free compress video cut video video to mp3 mute video slow motion add audio convert video format no upload edit video">
         <div class="tool-icon" style="background:#0e1f1d;">🎬</div>
         <div class="tool-info">
-          <div class="tool-name">ClipLab</div>
+          <div class="tool-name">VideoLab</div>
           <div class="tool-desc">Trim, compress, convert formats, mute, slow motion, add audio and extract audio — all in browser.</div>
           <div class="tool-tags"><span class="tag" style="background:#0d2321;color:#2dd4bf;">Video</span><span class="tag" style="background:#0d2321;color:#2dd4bf;">Editor</span></div>
           <span class="cs-badge">🔒 100% Client-Side</span>
@@ -528,7 +544,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
       <li><strong>ShopBook</strong> — offline billing for small shops</li>
       <li><strong>ImgLab</strong> — AI background remover, image compressor</li>
       <li><strong>Huelab</strong> — color palette, gradient, contrast checker</li>
-      <li><strong>ClipLab</strong> — video trim, compress, convert, slow motion</li>
+      <li><strong>VideoLab</strong> — video trim, compress, convert, slow motion</li>
       <li><strong>AudioLab</strong> — MP3 cutter, converter, ringtone maker</li>
       <li><strong>DevLab</strong> — JSON, regex, JWT, UUID, hash tools</li>
       <li><strong>PassGen</strong> — strong password generator</li>
