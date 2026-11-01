@@ -4,6 +4,8 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9EW10BJGW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-R9EW10BJGW");</script>
 <meta charset="UTF-8">
+<style id="theme-fouc">[data-theme="light"]{--bg:#f8fafc;--surface:#ffffff;--surface2:#f1f5f9;--border:#e2e8f0;--text:#0f172a;--muted:#64748b;--accent:#6366f1}</style>
+<script>!function(){var t=localStorage.getItem('nc_theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(t==='light')document.documentElement.setAttribute('data-theme','light');}();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NxtCraft – Free Online Tools for Everyone</title>
 <meta name="description" content="NxtCraft offers 23 free browser-based tools for PDF, finance, GST, SIP, salary slip, rent receipt, exam photo, image, video, audio, developer, AI and more. No signup, no paywall.">
@@ -614,8 +616,10 @@ function filterCat(cat, el) {
 // Keyboard shortcut: / or Ctrl+K focuses search
 document.addEventListener('keydown', e => {
   const search = document.getElementById('search');
-  if ((e.key === '/' && document.activeElement !== search) ||
-      (e.ctrlKey && e.key === 'k')) {
+  const tag = document.activeElement ? document.activeElement.tagName : '';
+  const editable = document.activeElement && document.activeElement.isContentEditable;
+  const inInput = tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || editable;
+  if ((e.key === '/' && !inInput) || (e.ctrlKey && e.key === 'k')) {
     e.preventDefault();
     search.focus();
     search.select();
