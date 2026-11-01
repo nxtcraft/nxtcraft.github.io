@@ -9,7 +9,7 @@
 <meta name="description" content="NxtCraft offers 21 free browser-based tools for PDF, finance, GST, SIP, salary slip, image, video, audio, developer, AI and more. No signup, no paywall. Everything runs in your browser.">
 <meta name="keywords" content="free online tools, free pdf tools, emi calculator, word counter, qr code generator, invoice generator, resume builder, income tax calculator, image compressor, mp3 cutter, video trimmer, password generator">
 <link rel="canonical" href="https://nxtcraft.github.io/">
-<meta property="og:title" content="NxtCraft – 18 Free Online Tools, No Signup">
+<meta property="og:title" content="NxtCraft – 21 Free Online Tools, No Signup">
 <meta property="og:description" content="PDF, GST, finance, image, video, audio, developer tools and more. Free forever, no signup, runs in your browser.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nxtcraft.github.io/">
@@ -95,6 +95,25 @@ header p{font-size:16px;color:var(--muted);margin-top:10px;max-width:500px;margi
 /* NEW BADGE */
 .new-badge{position:absolute;top:12px;right:12px;background:#16a34a;color:#fff;font-size:9px;font-weight:800;padding:2px 7px;border-radius:8px;letter-spacing:.5px;text-transform:uppercase}
 
+/* CLIENT-SIDE BADGE */
+.cs-badge{display:inline-block;background:#0d2a1a;color:#4ade80;font-size:9px;font-weight:800;padding:2px 7px;border-radius:8px;border:1px solid #166534;margin-top:6px;letter-spacing:.3px}
+
+/* RECENTS TRAY */
+.recents-wrap{max-width:500px;margin:0 auto 20px;display:none}
+.recents-label{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.recents-list{display:flex;flex-wrap:wrap;gap:7px}
+.recent-chip{display:flex;align-items:center;gap:5px;padding:6px 12px;background:var(--surface);border:1px solid var(--border);border-radius:20px;text-decoration:none;color:var(--text);font-size:12px;font-weight:600;transition:border-color .15s}
+.recent-chip:hover{border-color:var(--accent)}
+.recent-chip .ri{font-size:14px}
+
+/* THEME TOGGLE */
+.theme-btn{position:fixed;bottom:20px;right:20px;z-index:100;background:var(--surface);border:1px solid var(--border);border-radius:50%;width:42px;height:42px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .15s}
+.theme-btn:hover{border-color:var(--accent)}
+
+/* Light mode */
+body.light{--bg:#f8fafc;--surface:#ffffff;--surface2:#f1f5f9;--border:#e2e8f0;--text:#0f172a;--muted:#64748b;--accent:#6366f1}
+body.light .tool-card{box-shadow:0 1px 6px rgba(0,0,0,.07)}
+
 /* HIDDEN during filter */
 .section-block.hidden{display:none}
 .tool-card.hidden{display:none}
@@ -132,9 +151,14 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
     <div class="stat-item"><div class="stat-n">$0</div><div class="stat-l">Forever free</div></div>
   </div>
 
+  <div class="recents-wrap" id="recents-wrap">
+    <div class="recents-label"><span>⚡ Recently Used</span><button onclick="clearRecents()" style="background:none;border:none;color:var(--muted);font-size:11px;cursor:pointer;padding:0;">Clear</button></div>
+    <div class="recents-list" id="recents-list"></div>
+  </div>
+
   <div class="search-wrap">
     <span class="search-icon">🔍</span>
-    <input type="text" id="search" placeholder="Search tools…" oninput="filterTools(this.value)" autocomplete="off">
+    <input type="text" id="search" placeholder="Search tools… (press / or Ctrl+K)" oninput="filterTools(this.value)" autocomplete="off">
   </div>
 
   <div class="filter-row">
@@ -158,12 +182,13 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
       <div class="section-line"></div>
     </div>
     <div class="grid">
-      <a class="tool-card" href="pdflab/" target="_blank" rel="noopener" data-tags="pdf merge split compress rotate image convert word">
+      <a class="tool-card" href="pdflab/" target="_blank" rel="noopener" data-tags="pdf merge split compress rotate image convert word combine pdf documents">
         <div class="tool-icon" style="background:#1c1b2e;">📄</div>
         <div class="tool-info">
           <div class="tool-name">PDFLab</div>
           <div class="tool-desc">Merge, split, compress, rotate PDFs and convert images to PDF. Files never leave your device.</div>
           <div class="tool-tags"><span class="tag" style="background:#3b1d28;color:#f87171;">PDF</span><span class="tag" style="background:#3b1d28;color:#f87171;">Files</span></div>
+          <span class="cs-badge">🔒 100% Client-Side</span>
         </div>
       </a>
       <a class="tool-card" href="resumeforge/" target="_blank" rel="noopener" data-tags="resume builder cv template pdf download fresher biodata">
@@ -273,12 +298,13 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
       <div class="section-line"></div>
     </div>
     <div class="grid">
-      <a class="tool-card" href="imglab/" target="_blank" rel="noopener" data-tags="remove background image compressor resize image convert png jpg webp passport photo background remover free">
+      <a class="tool-card" href="imglab/" target="_blank" rel="noopener" data-tags="remove background image compressor resize image convert png jpg webp passport photo background remover free compress photo">
         <div class="tool-icon" style="background:#1e1b2e;">🖼️</div>
         <div class="tool-info">
           <div class="tool-name">ImgLab</div>
           <div class="tool-desc">AI background remover, image compressor, resizer, format converter and passport photo maker. No upload.</div>
           <div class="tool-tags"><span class="tag" style="background:#2d1b4e;color:#c084fc;">Image</span><span class="tag" style="background:#2d1b4e;color:#c084fc;">AI</span></div>
+          <span class="cs-badge">🔒 Zero Cloud Upload</span>
         </div>
       </a>
       <a class="tool-card" href="huelab/" target="_blank" rel="noopener" data-tags="color palette generator gradient maker css contrast checker hex rgb hsl color mixer">
@@ -302,20 +328,22 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
       <div class="section-line"></div>
     </div>
     <div class="grid">
-      <a class="tool-card" href="cliplab/" target="_blank" rel="noopener" data-tags="trim video online free compress video cut video video to mp3 mute video slow motion add audio convert video format no upload">
+      <a class="tool-card" href="cliplab/" target="_blank" rel="noopener" data-tags="trim video online free compress video cut video video to mp3 mute video slow motion add audio convert video format no upload edit video">
         <div class="tool-icon" style="background:#0e1f1d;">🎬</div>
         <div class="tool-info">
           <div class="tool-name">ClipLab</div>
           <div class="tool-desc">Trim, compress, convert formats, mute, slow motion, add audio and extract audio — all in browser.</div>
           <div class="tool-tags"><span class="tag" style="background:#0d2321;color:#2dd4bf;">Video</span><span class="tag" style="background:#0d2321;color:#2dd4bf;">Editor</span></div>
+          <span class="cs-badge">🔒 100% Client-Side</span>
         </div>
       </a>
-      <a class="tool-card" href="audiolab/" target="_blank" rel="noopener" data-tags="mp3 cutter audio converter ringtone maker volume booster merge audio free online cut audio">
+      <a class="tool-card" href="audiolab/" target="_blank" rel="noopener" data-tags="mp3 cutter audio converter ringtone maker volume booster merge audio free online cut audio edit mp3">
         <div class="tool-icon" style="background:#1f1a0d;">🎧</div>
         <div class="tool-info">
           <div class="tool-name">AudioLab</div>
           <div class="tool-desc">Cut MP3, convert audio format, make ringtone with fade, boost volume and merge audio — in browser.</div>
           <div class="tool-tags"><span class="tag" style="background:#2e1f08;color:#fbbf24;">Audio</span><span class="tag" style="background:#2e1f08;color:#fbbf24;">Editor</span></div>
+          <span class="cs-badge">🔒 100% Client-Side</span>
         </div>
       </a>
     </div>
@@ -410,7 +438,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
     <div class="section-header">
       <span class="section-icon">📬</span>
       <span class="section-name">Deals & Newsletter</span>
-      <span class="section-count">1</span>
+      <span class="section-count">1 tool</span>
       <div class="section-line"></div>
     </div>
     <div class="grid">
@@ -485,31 +513,64 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
       <li><strong>QRLab</strong> — QR code generator</li>
       <li><strong>PromptLab</strong> — ChatGPT & Claude prompt library</li>
       <li><strong>BiodataKit</strong> — marriage biodata maker</li>
+      <li><strong>GSTCalc</strong> — GST calculator India (add/reverse GST, CGST/SGST)</li>
+      <li><strong>SIPCalc</strong> — SIP, Step-Up SIP, Goal Planner, LTCG tax</li>
+      <li><strong>Salary Slip</strong> — free payslip generator with PF, HRA, TDS</li>
     </ul>
   </div>
 
 </div>
 
+<button class="theme-btn" id="theme-btn" onclick="toggleTheme()" title="Toggle dark/light mode">🌙</button>
+
 <footer>
   &copy; 2026 NxtCraft · All tools are free forever ·
-  <a href="about/">About</a> · <a href="privacy/">Privacy Policy</a>
+  <a href="about/">About</a> · <a href="privacy/">Privacy Policy</a> ·
+  <a href="https://github.com/nxtcraft" target="_blank" rel="noopener">GitHub ↗</a>
 </footer>
 
 <script>
-// Search
+// Search with synonym map
+const SYNONYMS = {
+  'income tax': 'taxcalc tax',
+  'income tax calculator': 'taxcalc',
+  'convert image': 'imglab',
+  'compress image': 'imglab compress',
+  'background remove': 'imglab background remover',
+  'remove bg': 'imglab background remover',
+  'cut video': 'cliplab trim',
+  'edit video': 'cliplab',
+  'cut mp3': 'audiolab',
+  'ringtone': 'audiolab ringtone',
+  'home loan': 'emicalc',
+  'car loan': 'emicalc',
+  'mutual fund': 'sipcalc sip',
+  'tax calculator': 'taxcalc',
+  'qr generator': 'qrlab',
+};
+
+function expandQuery(q) {
+  let out = q;
+  for (const [k, v] of Object.entries(SYNONYMS)) {
+    if (q.includes(k)) out += ' ' + v;
+  }
+  return out;
+}
+
 function filterTools(q) {
-  const term = q.toLowerCase();
+  const raw = q.toLowerCase().trim();
+  const term = expandQuery(raw);
   document.querySelectorAll('.section-block').forEach(sec => {
     let anyVisible = false;
     sec.querySelectorAll('.tool-card').forEach(card => {
-      const match = !term || (card.dataset.tags + ' ' + card.querySelector('.tool-name').textContent).toLowerCase().includes(term);
+      const haystack = (card.dataset.tags + ' ' + card.querySelector('.tool-name').textContent).toLowerCase();
+      const match = !raw || term.split(' ').some(t => t && haystack.includes(t));
       card.classList.toggle('hidden', !match);
       if (match) anyVisible = true;
     });
     sec.classList.toggle('hidden', !anyVisible);
   });
-  // Reset chips to "All" style when searching
-  if (term) {
+  if (raw) {
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
     document.querySelector('.chip').classList.add('active');
   }
@@ -529,6 +590,82 @@ function filterCat(cat, el) {
     });
   }
 }
+
+// Keyboard shortcut: / or Ctrl+K focuses search
+document.addEventListener('keydown', e => {
+  const search = document.getElementById('search');
+  if ((e.key === '/' && document.activeElement !== search) ||
+      (e.ctrlKey && e.key === 'k')) {
+    e.preventDefault();
+    search.focus();
+    search.select();
+  }
+  if (e.key === 'Escape' && document.activeElement === search) {
+    search.value = '';
+    filterTools('');
+    search.blur();
+  }
+});
+
+// Recently Used (localStorage)
+const RECENTS_KEY = 'nc_recents_v1';
+
+function getRecents() {
+  try { return JSON.parse(localStorage.getItem(RECENTS_KEY)) || []; } catch { return []; }
+}
+
+function addRecent(name, href, icon) {
+  let r = getRecents().filter(x => x.href !== href);
+  r.unshift({ name, href, icon });
+  if (r.length > 5) r = r.slice(0, 5);
+  localStorage.setItem(RECENTS_KEY, JSON.stringify(r));
+}
+
+function renderRecents() {
+  const r = getRecents();
+  const wrap = document.getElementById('recents-wrap');
+  const list = document.getElementById('recents-list');
+  if (!r.length) { wrap.style.display = 'none'; return; }
+  wrap.style.display = 'block';
+  list.innerHTML = r.map(x =>
+    `<a class="recent-chip" href="${x.href}" target="_blank" rel="noopener">
+      <span class="ri">${x.icon}</span>${x.name}
+    </a>`
+  ).join('');
+}
+
+function clearRecents() {
+  localStorage.removeItem(RECENTS_KEY);
+  renderRecents();
+}
+
+// Track clicks on tool cards
+document.querySelectorAll('.tool-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const name = card.querySelector('.tool-name').textContent;
+    const icon = card.querySelector('.tool-icon').textContent.trim();
+    const href = card.getAttribute('href');
+    addRecent(name, href, icon);
+  });
+});
+
+renderRecents();
+
+// Theme toggle
+function applyTheme(mode) {
+  document.body.classList.toggle('light', mode === 'light');
+  document.getElementById('theme-btn').textContent = mode === 'light' ? '🌙' : '☀️';
+}
+
+function toggleTheme() {
+  const current = localStorage.getItem('nc_theme') || 'dark';
+  const next = current === 'dark' ? 'light' : 'dark';
+  localStorage.setItem('nc_theme', next);
+  applyTheme(next);
+}
+
+// Apply saved theme on load
+applyTheme(localStorage.getItem('nc_theme') || 'dark');
 
 // Handle ?q= param
 const urlQ = new URLSearchParams(location.search).get('q');
