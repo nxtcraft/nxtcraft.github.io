@@ -8,7 +8,7 @@
 <script>!function(){var t=localStorage.getItem('nc_theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(t==='light')document.documentElement.setAttribute('data-theme','light');}();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NxtCraft – Free Online Tools for Everyone</title>
-<meta name="description" content="NxtCraft offers 32 free browser-based tools for PDF, finance, GST, SIP, salary slip, rent receipt, exam photo, image, video, audio, developer, AI and more. No signup, no paywall.">
+<meta name="description" content="NxtCraft offers 35 free browser-based tools for PDF, finance, GST, SIP, salary slip, rent receipt, exam photo, image, video, audio, developer, AI and more. No signup, no paywall.">
 <meta name="keywords" content="free online tools, free pdf tools, emi calculator, word counter, qr code generator, invoice generator, resume builder, income tax calculator, image compressor, mp3 cutter, video trimmer, password generator">
 <link rel="canonical" href="https://nxtcraft.github.io/">
 <meta property="og:title" content="NxtCraft – 21 Free Online Tools, No Signup">
@@ -49,7 +49,10 @@
   {"@type":"ListItem","position":29,"name":"FD & RD Calculator – Fixed Deposit Returns India","url":"https://nxtcraft.github.io/fdcalc/"},
   {"@type":"ListItem","position":30,"name":"BMI Calculator – Body Mass Index Ideal Weight India","url":"https://nxtcraft.github.io/bmi-calc/"},
   {"@type":"ListItem","position":31,"name":"WhatsApp Link Generator – Create wa.me Link Free","url":"https://nxtcraft.github.io/wa-link/"},
-  {"@type":"ListItem","position":32,"name":"Pomodoro Timer – Focus & Productivity Timer","url":"https://nxtcraft.github.io/pomodoro/"}
+  {"@type":"ListItem","position":32,"name":"Pomodoro Timer – Focus & Productivity Timer","url":"https://nxtcraft.github.io/pomodoro/"},
+  {"@type":"ListItem","position":33,"name":"Color Contrast Checker – WCAG AA/AAA Accessibility","url":"https://nxtcraft.github.io/color-contrast/"},
+  {"@type":"ListItem","position":34,"name":"CSS Gradient Generator – Linear Radial Conic","url":"https://nxtcraft.github.io/css-gradient/"},
+  {"@type":"ListItem","position":35,"name":"PDF Text Extractor – Extract Text from PDF Free","url":"https://nxtcraft.github.io/pdf-text/"}
 ]}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -175,7 +178,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
   </div>
 
   <div class="filter-row">
-    <button class="chip active" onclick="filterCat('all',this)">All (32)</button>
+    <button class="chip active" onclick="filterCat('all',this)">All (35)</button>
     <button class="chip" onclick="filterCat('documents',this)">📄 Documents</button>
     <button class="chip" onclick="filterCat('finance',this)">💰 Finance</button>
     <button class="chip" onclick="filterCat('image',this)">🖼️ Image & Design</button>
@@ -192,7 +195,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
     <div class="section-header">
       <span class="section-icon">📄</span>
       <span class="section-name">Documents</span>
-      <span class="section-count">5 tools</span>
+      <span class="section-count">6 tools</span>
       <div class="section-line"></div>
     </div>
     <div class="grid">
@@ -204,6 +207,15 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
           <div class="tool-tags"><span class="tag" style="background:#3b1d28;color:#f87171;">PDF</span><span class="tag" style="background:#3b1d28;color:#f87171;">Files</span></div>
           <span class="cs-badge">🔒 100% Client-Side</span>
         </div>
+      </a>
+      <a class="tool-card" href="pdf-text/" target="_blank" rel="noopener" data-tags="pdf text extractor extract text from pdf pdf to text pdf reader copy pdf text free browser offline">
+        <div class="tool-icon" style="background:#1a0a0a;">📄</div>
+        <div class="tool-info">
+          <div class="tool-name">PDF Text Extractor</div>
+          <div class="tool-desc">Extract all text from any PDF instantly. Page-by-page view, copy all or download .txt. Your file never leaves your device.</div>
+          <div class="tool-tags"><span class="tag" style="background:#1a0a0a;color:#f87171;">PDF</span><span class="tag" style="background:#1a0a0a;color:#f87171;">Extract</span></div>
+        </div>
+        <span class="new-badge">NEW</span>
       </a>
       <a class="tool-card" href="aadhaar-mask/" target="_blank" rel="noopener" data-tags="aadhaar masking redact id card document privacy kyc mask number">
         <div class="tool-icon" style="background:#1a1200;">🪪</div>
@@ -459,7 +471,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
     <div class="section-header">
       <span class="section-icon">⚙️</span>
       <span class="section-name">Developer & Utility</span>
-      <span class="section-count">6 tools</span>
+      <span class="section-count">8 tools</span>
       <div class="section-line"></div>
     </div>
     <div class="grid">
@@ -512,6 +524,24 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
           <div class="tool-desc">Generate QR codes for URL, WiFi, contact, email, phone, SMS — no watermark, instant download.</div>
           <div class="tool-tags"><span class="tag" style="background:#0d1f2a;color:#38bdf8;">QR Code</span><span class="tag" style="background:#0d1f2a;color:#38bdf8;">Utility</span></div>
         </div>
+      </a>
+      <a class="tool-card" href="color-contrast/" target="_blank" rel="noopener" data-tags="color contrast checker wcag aa aaa accessibility contrast ratio text background designer frontend web">
+        <div class="tool-icon" style="background:#1a1b2e;">🎨</div>
+        <div class="tool-info">
+          <div class="tool-name">Color Contrast Checker</div>
+          <div class="tool-desc">Test foreground/background color contrast for WCAG 2.1 AA &amp; AAA compliance. Live preview, 30+ colour swatches.</div>
+          <div class="tool-tags"><span class="tag" style="background:#1a1b2e;color:#818cf8;">WCAG</span><span class="tag" style="background:#1a1b2e;color:#818cf8;">Accessibility</span></div>
+        </div>
+        <span class="new-badge">NEW</span>
+      </a>
+      <a class="tool-card" href="css-gradient/" target="_blank" rel="noopener" data-tags="css gradient generator linear radial conic gradient live preview copy css code presets web design">
+        <div class="tool-icon" style="background:#1e1b2e;">🌈</div>
+        <div class="tool-info">
+          <div class="tool-name">CSS Gradient Generator</div>
+          <div class="tool-desc">Create linear, radial and conic CSS gradients with live preview, colour stops, angle control and 15+ presets.</div>
+          <div class="tool-tags"><span class="tag" style="background:#2d1b4e;color:#c084fc;">CSS</span><span class="tag" style="background:#2d1b4e;color:#c084fc;">Design</span></div>
+        </div>
+        <span class="new-badge">NEW</span>
       </a>
     </div>
   </div>
