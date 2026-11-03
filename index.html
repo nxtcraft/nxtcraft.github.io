@@ -8,7 +8,7 @@
 <script>!function(){var t=localStorage.getItem('nc_theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(t==='light')document.documentElement.setAttribute('data-theme','light');}();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NxtCraft – Free Online Tools for Everyone</title>
-<meta name="description" content="NxtCraft offers 28 free browser-based tools for PDF, finance, GST, SIP, salary slip, rent receipt, exam photo, image, video, audio, developer, AI and more. No signup, no paywall.">
+<meta name="description" content="NxtCraft offers 32 free browser-based tools for PDF, finance, GST, SIP, salary slip, rent receipt, exam photo, image, video, audio, developer, AI and more. No signup, no paywall.">
 <meta name="keywords" content="free online tools, free pdf tools, emi calculator, word counter, qr code generator, invoice generator, resume builder, income tax calculator, image compressor, mp3 cutter, video trimmer, password generator">
 <link rel="canonical" href="https://nxtcraft.github.io/">
 <meta property="og:title" content="NxtCraft – 21 Free Online Tools, No Signup">
@@ -45,7 +45,11 @@
   {"@type":"ListItem","position":25,"name":"EPF PPF SSY Calculator","url":"https://nxtcraft.github.io/pfcalc/"},
   {"@type":"ListItem","position":26,"name":"Unit Converter – Length Weight Temperature","url":"https://nxtcraft.github.io/unitconv/"},
   {"@type":"ListItem","position":27,"name":"Age Calculator – Exact Age Birthday Countdown","url":"https://nxtcraft.github.io/agecalc/"},
-  {"@type":"ListItem","position":28,"name":"Aadhaar Masking Tool – Redact Aadhaar Number","url":"https://nxtcraft.github.io/aadhaar-mask/"}
+  {"@type":"ListItem","position":28,"name":"Aadhaar Masking Tool – Redact Aadhaar Number","url":"https://nxtcraft.github.io/aadhaar-mask/"},
+  {"@type":"ListItem","position":29,"name":"FD & RD Calculator – Fixed Deposit Returns India","url":"https://nxtcraft.github.io/fdcalc/"},
+  {"@type":"ListItem","position":30,"name":"BMI Calculator – Body Mass Index Ideal Weight India","url":"https://nxtcraft.github.io/bmi-calc/"},
+  {"@type":"ListItem","position":31,"name":"WhatsApp Link Generator – Create wa.me Link Free","url":"https://nxtcraft.github.io/wa-link/"},
+  {"@type":"ListItem","position":32,"name":"Pomodoro Timer – Focus & Productivity Timer","url":"https://nxtcraft.github.io/pomodoro/"}
 ]}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -171,11 +175,12 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
   </div>
 
   <div class="filter-row">
-    <button class="chip active" onclick="filterCat('all',this)">All (28)</button>
+    <button class="chip active" onclick="filterCat('all',this)">All (32)</button>
     <button class="chip" onclick="filterCat('documents',this)">📄 Documents</button>
     <button class="chip" onclick="filterCat('finance',this)">💰 Finance</button>
     <button class="chip" onclick="filterCat('image',this)">🖼️ Image & Design</button>
     <button class="chip" onclick="filterCat('media',this)">🎬 Video & Audio</button>
+    <button class="chip" onclick="filterCat('health',this)">🏃 Health</button>
     <button class="chip" onclick="filterCat('developer',this)">⚙️ Developer</button>
     <button class="chip" onclick="filterCat('ai',this)">🤖 AI</button>
     <button class="chip" onclick="filterCat('india',this)">🇮🇳 India</button>
@@ -241,7 +246,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
     <div class="section-header">
       <span class="section-icon">💰</span>
       <span class="section-name">Finance & Business</span>
-      <span class="section-count">8 tools</span>
+      <span class="section-count">9 tools</span>
       <div class="section-line"></div>
     </div>
     <div class="grid">
@@ -328,6 +333,54 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
           <div class="tool-desc">Year-by-year EPF, PPF and Sukanya Samriddhi Yojana maturity calculator with employer contribution breakdown.</div>
           <div class="tool-tags"><span class="tag" style="background:#042018;color:#2dd4bf;">Savings</span><span class="tag" style="background:#042018;color:#2dd4bf;">Finance</span></div>
         </div>
+      </a>
+      <a class="tool-card" href="fdcalc/" target="_blank" rel="noopener" data-tags="fd calculator fixed deposit rd calculator recurring deposit bank interest rate india senior citizen quarterly maturity amount tds">
+        <div class="tool-icon" style="background:#042d1a;">🏦</div>
+        <div class="tool-info">
+          <div class="tool-name">FD & RD Calculator</div>
+          <div class="tool-desc">Calculate FD maturity amount with quarterly/monthly compounding, RD returns, and compare 12 bank rates side by side.</div>
+          <div class="tool-tags"><span class="tag" style="background:#042d1a;color:#4ade80;">Fixed Deposit</span><span class="tag" style="background:#042d1a;color:#4ade80;">RD</span></div>
+        </div>
+        <span class="new-badge">NEW</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- HEALTH & PRODUCTIVITY -->
+  <div class="section-block" data-cat="health">
+    <div class="section-header">
+      <span class="section-icon">🏃</span>
+      <span class="section-name">Health & Productivity</span>
+      <span class="section-count">3 tools</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="grid">
+      <a class="tool-card" href="bmi-calc/" target="_blank" rel="noopener" data-tags="bmi calculator india body mass index ideal weight bmr tdee calorie need asian bmi metric imperial">
+        <div class="tool-icon" style="background:#082030;">⚖️</div>
+        <div class="tool-info">
+          <div class="tool-name">BMI Calculator</div>
+          <div class="tool-desc">Calculate BMI, ideal weight range, BMR and daily calorie need. Asian BMI ranges for India included. Metric & imperial.</div>
+          <div class="tool-tags"><span class="tag" style="background:#082030;color:#38bdf8;">Health</span><span class="tag" style="background:#082030;color:#38bdf8;">BMI</span></div>
+        </div>
+        <span class="new-badge">NEW</span>
+      </a>
+      <a class="tool-card" href="wa-link/" target="_blank" rel="noopener" data-tags="whatsapp link generator wa.me link pre-filled message whatsapp qr code business link bulk generator india">
+        <div class="tool-icon" style="background:#042d16;">💬</div>
+        <div class="tool-info">
+          <div class="tool-name">WA Link Generator</div>
+          <div class="tool-desc">Create clickable WhatsApp wa.me links with pre-filled messages. QR code included. Bulk links for business.</div>
+          <div class="tool-tags"><span class="tag" style="background:#042d16;color:#4ade80;">WhatsApp</span><span class="tag" style="background:#042d16;color:#4ade80;">Utility</span></div>
+        </div>
+        <span class="new-badge">NEW</span>
+      </a>
+      <a class="tool-card" href="pomodoro/" target="_blank" rel="noopener" data-tags="pomodoro timer focus timer 25 minute timer work break productivity timer task tracker offline browser timer">
+        <div class="tool-icon" style="background:#2d0a0a;">🍅</div>
+        <div class="tool-info">
+          <div class="tool-name">Pomodoro Timer</div>
+          <div class="tool-desc">25-min focus sessions with short and long breaks. Task list, auto-start, desktop notifications. Works offline.</div>
+          <div class="tool-tags"><span class="tag" style="background:#2d0a0a;color:#f87171;">Focus</span><span class="tag" style="background:#2d0a0a;color:#f87171;">Productivity</span></div>
+        </div>
+        <span class="new-badge">NEW</span>
       </a>
     </div>
   </div>
