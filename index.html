@@ -8,7 +8,7 @@
 <script>!function(){var t=localStorage.getItem('nc_theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(t==='light')document.documentElement.setAttribute('data-theme','light');}();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NxtCraft – Free Online Tools for Everyone</title>
-<meta name="description" content="NxtCraft offers 25 free browser-based tools for PDF, finance, GST, SIP, salary slip, rent receipt, exam photo, image, video, audio, developer, AI and more. No signup, no paywall.">
+<meta name="description" content="NxtCraft offers 28 free browser-based tools for PDF, finance, GST, SIP, salary slip, rent receipt, exam photo, image, video, audio, developer, AI and more. No signup, no paywall.">
 <meta name="keywords" content="free online tools, free pdf tools, emi calculator, word counter, qr code generator, invoice generator, resume builder, income tax calculator, image compressor, mp3 cutter, video trimmer, password generator">
 <link rel="canonical" href="https://nxtcraft.github.io/">
 <meta property="og:title" content="NxtCraft – 21 Free Online Tools, No Signup">
@@ -43,7 +43,9 @@
   {"@type":"ListItem","position":23,"name":"Exam Photo Resizer – SSC UPSC IBPS Photo Size","url":"https://nxtcraft.github.io/imglab/#exam"},
   {"@type":"ListItem","position":24,"name":"Gratuity & Leave Encashment Calculator","url":"https://nxtcraft.github.io/gratuity/"},
   {"@type":"ListItem","position":25,"name":"EPF PPF SSY Calculator","url":"https://nxtcraft.github.io/pfcalc/"},
-  {"@type":"ListItem","position":26,"name":"Unit Converter – Length Weight Temperature","url":"https://nxtcraft.github.io/unitconv/"}
+  {"@type":"ListItem","position":26,"name":"Unit Converter – Length Weight Temperature","url":"https://nxtcraft.github.io/unitconv/"},
+  {"@type":"ListItem","position":27,"name":"Age Calculator – Exact Age Birthday Countdown","url":"https://nxtcraft.github.io/agecalc/"},
+  {"@type":"ListItem","position":28,"name":"Aadhaar Masking Tool – Redact Aadhaar Number","url":"https://nxtcraft.github.io/aadhaar-mask/"}
 ]}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -169,7 +171,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
   </div>
 
   <div class="filter-row">
-    <button class="chip active" onclick="filterCat('all',this)">All (26)</button>
+    <button class="chip active" onclick="filterCat('all',this)">All (28)</button>
     <button class="chip" onclick="filterCat('documents',this)">📄 Documents</button>
     <button class="chip" onclick="filterCat('finance',this)">💰 Finance</button>
     <button class="chip" onclick="filterCat('image',this)">🖼️ Image & Design</button>
@@ -185,7 +187,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
     <div class="section-header">
       <span class="section-icon">📄</span>
       <span class="section-name">Documents</span>
-      <span class="section-count">4 tools</span>
+      <span class="section-count">5 tools</span>
       <div class="section-line"></div>
     </div>
     <div class="grid">
@@ -197,6 +199,15 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
           <div class="tool-tags"><span class="tag" style="background:#3b1d28;color:#f87171;">PDF</span><span class="tag" style="background:#3b1d28;color:#f87171;">Files</span></div>
           <span class="cs-badge">🔒 100% Client-Side</span>
         </div>
+      </a>
+      <a class="tool-card" href="aadhaar-mask/" target="_blank" rel="noopener" data-tags="aadhaar masking redact id card document privacy kyc mask number">
+        <div class="tool-icon" style="background:#1a1200;">🪪</div>
+        <div class="tool-info">
+          <div class="tool-name">AadhaarMask</div>
+          <div class="tool-desc">Redact Aadhaar number and sensitive fields on ID documents. Draw mask boxes, add labels, download PDF. 100% private.</div>
+          <div class="tool-tags"><span class="tag" style="background:#1a1200;color:#fbbf24;">Aadhaar</span><span class="tag" style="background:#1a1200;color:#fbbf24;">Privacy</span></div>
+        </div>
+        <span class="new-badge">NEW</span>
       </a>
       <a class="tool-card" href="resumeforge/" target="_blank" rel="noopener" data-tags="resume builder cv template pdf download fresher biodata">
         <div class="tool-icon" style="background:#1e1b2e;">👤</div>
@@ -395,7 +406,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
     <div class="section-header">
       <span class="section-icon">⚙️</span>
       <span class="section-name">Developer & Utility</span>
-      <span class="section-count">5 tools</span>
+      <span class="section-count">6 tools</span>
       <div class="section-line"></div>
     </div>
     <div class="grid">
@@ -429,6 +440,15 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
           <div class="tool-name">Unit Converter</div>
           <div class="tool-desc">Convert length, weight, temperature, area, volume, speed, data storage and time units instantly.</div>
           <div class="tool-tags"><span class="tag" style="background:#0d1f2a;color:#38bdf8;">Convert</span><span class="tag" style="background:#0d1f2a;color:#38bdf8;">Utility</span></div>
+        </div>
+        <span class="new-badge">NEW</span>
+      </a>
+      <a class="tool-card" href="agecalc/" target="_blank" rel="noopener" data-tags="age calculator date of birth birthday countdown zodiac exact age years months days">
+        <div class="tool-icon" style="background:#1a0a2e;">🎂</div>
+        <div class="tool-info">
+          <div class="tool-name">Age Calculator</div>
+          <div class="tool-desc">Calculate exact age in years, months and days. Next birthday countdown, zodiac sign, total days lived and more.</div>
+          <div class="tool-tags"><span class="tag" style="background:#1a0a2e;color:#a78bfa;">Age</span><span class="tag" style="background:#1a0a2e;color:#a78bfa;">Utility</span></div>
         </div>
         <span class="new-badge">NEW</span>
       </a>
