@@ -8,7 +8,7 @@
 <script>!function(){var t=localStorage.getItem('nc_theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(t==='light')document.documentElement.setAttribute('data-theme','light');}();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NxtCraft – Free Online Tools for Everyone</title>
-<meta name="description" content="NxtCraft offers 35 free browser-based tools for PDF, finance, GST, SIP, salary slip, rent receipt, exam photo, image, video, audio, developer, AI and more. No signup, no paywall.">
+<meta name="description" content="NxtCraft offers 37 free browser-based tools for PDF, finance, GST, SIP, salary slip, rent receipt, exam photo, image, video, audio, developer, AI and more. No signup, no paywall.">
 <meta name="keywords" content="free online tools, free pdf tools, emi calculator, word counter, qr code generator, invoice generator, resume builder, income tax calculator, image compressor, mp3 cutter, video trimmer, password generator">
 <link rel="canonical" href="https://nxtcraft.github.io/">
 <meta property="og:title" content="NxtCraft – 21 Free Online Tools, No Signup">
@@ -52,7 +52,9 @@
   {"@type":"ListItem","position":32,"name":"Pomodoro Timer – Focus & Productivity Timer","url":"https://nxtcraft.github.io/pomodoro/"},
   {"@type":"ListItem","position":33,"name":"Color Contrast Checker – WCAG AA/AAA Accessibility","url":"https://nxtcraft.github.io/color-contrast/"},
   {"@type":"ListItem","position":34,"name":"CSS Gradient Generator – Linear Radial Conic","url":"https://nxtcraft.github.io/css-gradient/"},
-  {"@type":"ListItem","position":35,"name":"PDF Text Extractor – Extract Text from PDF Free","url":"https://nxtcraft.github.io/pdf-text/"}
+  {"@type":"ListItem","position":35,"name":"PDF Text Extractor – Extract Text from PDF Free","url":"https://nxtcraft.github.io/pdf-text/"},
+  {"@type":"ListItem","position":36,"name":"AI Grammar Checker & Rewriter – No API Key Browser AI","url":"https://nxtcraft.github.io/ai-grammar/"},
+  {"@type":"ListItem","position":37,"name":"AI Audio Transcription – Whisper.js Speech to Text Free","url":"https://nxtcraft.github.io/ai-transcribe/"}
 ]}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -178,7 +180,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
   </div>
 
   <div class="filter-row">
-    <button class="chip active" onclick="filterCat('all',this)">All (35)</button>
+    <button class="chip active" onclick="filterCat('all',this)">All (37)</button>
     <button class="chip" onclick="filterCat('documents',this)">📄 Documents</button>
     <button class="chip" onclick="filterCat('finance',this)">💰 Finance</button>
     <button class="chip" onclick="filterCat('image',this)">🖼️ Image & Design</button>
@@ -551,7 +553,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
     <div class="section-header">
       <span class="section-icon">🤖</span>
       <span class="section-name">AI Tools</span>
-      <span class="section-count">1 tool</span>
+      <span class="section-count">3 tools</span>
       <div class="section-line"></div>
     </div>
     <div class="grid">
@@ -562,6 +564,24 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
           <div class="tool-desc">Ready-to-use ChatGPT & Claude prompts for marketing, coding, writing, HR and business. Copy in one click.</div>
           <div class="tool-tags"><span class="tag" style="background:#2d1b4e;color:#c084fc;">AI Prompts</span><span class="tag" style="background:#2d1b4e;color:#c084fc;">ChatGPT</span></div>
         </div>
+      </a>
+      <a class="tool-card" href="ai-grammar/" target="_blank" rel="noopener" data-tags="ai grammar checker text rewriter grammar fix simplify formal casual summarize transformers.js no api key offline browser ai">
+        <div class="tool-icon" style="background:#1e0d2e;">✨</div>
+        <div class="tool-info">
+          <div class="tool-name">AI Grammar &amp; Rewriter</div>
+          <div class="tool-desc">Fix grammar, rewrite, simplify or formalize text using on-device AI. No API key — runs 100% in your browser.</div>
+          <div class="tool-tags"><span class="tag" style="background:#2d1b4e;color:#a78bfa;">On-device AI</span><span class="tag" style="background:#2d1b4e;color:#a78bfa;">Grammar</span></div>
+        </div>
+        <span class="new-badge">NEW</span>
+      </a>
+      <a class="tool-card" href="ai-transcribe/" target="_blank" rel="noopener" data-tags="ai audio transcription whisper speech to text stt mp3 wav transcribe microphone record no api key browser offline india hindi">
+        <div class="tool-icon" style="background:#0a1829;">🎙️</div>
+        <div class="tool-info">
+          <div class="tool-name">AI Audio Transcription</div>
+          <div class="tool-desc">Convert speech to text using OpenAI Whisper in your browser. Upload or record. 99+ languages, no API key needed.</div>
+          <div class="tool-tags"><span class="tag" style="background:#0c2a3f;color:#38bdf8;">Whisper AI</span><span class="tag" style="background:#0c2a3f;color:#38bdf8;">Transcribe</span></div>
+        </div>
+        <span class="new-badge">NEW</span>
       </a>
     </div>
   </div>
