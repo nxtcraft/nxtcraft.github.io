@@ -698,10 +698,15 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
 
 <footer>
   &copy; 2024-2026 NxtCraft · All tools are free forever ·
-  <a href="about/">About</a> · <a href="privacy/">Privacy Policy</a> ·
+  <a href="about/">About</a> · <a href="privacy/">Privacy Policy</a> · <a href="terms/">Terms</a> ·
   <a href="https://github.com/nxtcraft" target="_blank" rel="noopener">GitHub ↗</a>
   <br><small style="opacity:.6">All rights reserved. Unauthorized reproduction or redistribution prohibited.</small>
 </footer>
+<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1e293b;color:#cbd5e1;padding:.75rem 1.5rem;font-size:.82rem;z-index:9999;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+  <span>We use Google Analytics to understand how visitors use this site. No personal data is collected or sold. <a href="/privacy/" style="color:#818cf8">Privacy Policy</a></span>
+  <button onclick="document.getElementById('cookie-banner').style.display='none';localStorage.setItem('cookie-ok','1')" style="background:#4f46e5;color:#fff;border:none;border-radius:6px;padding:.4rem 1rem;cursor:pointer;font-size:.82rem;white-space:nowrap;flex-shrink:0">Got it</button>
+</div>
+<script>if(!localStorage.getItem('cookie-ok'))document.getElementById('cookie-banner').style.display='flex';</script>
 
 <script>
 // Search with synonym map

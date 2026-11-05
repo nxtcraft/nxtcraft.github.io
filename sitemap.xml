@@ -77,4 +77,6 @@
   <url><loc>https://nxtcraft.github.io/pdf-text/guide/</loc><lastmod>2026-11-04</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://nxtcraft.github.io/about/</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://nxtcraft.github.io/privacy/</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://nxtcraft.github.io/privacy/</loc><lastmod>2026-11-05</lastmod><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://nxtcraft.github.io/terms/</loc><lastmod>2026-11-05</lastmod><priority>0.3</priority><changefreq>yearly</changefreq></url>
 </urlset>
