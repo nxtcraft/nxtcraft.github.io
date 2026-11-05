@@ -1,10 +1,31 @@
-Copyright (c) 2024-2026 NxtCraft. All Rights Reserved.
+Copyright (c) 2024-2026 NxtCraft. All rights reserved.
 
-This software and its source code are proprietary and confidential.
-Unauthorized copying, modification, distribution, or use of this software,
-via any medium, is strictly prohibited without prior written permission
-from the copyright owner.
+PROPRIETARY LICENSE
 
-For licensing inquiries: nxtcraft.tools@gmail.com
+This software and all associated files, content, designs, and documentation
+("the Work") are the exclusive property of NxtCraft.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+PERMITTED USE:
+- You may view the source code for personal learning purposes.
+- You may use the hosted tools at https://nxtcraft.github.io for personal,
+  non-commercial purposes.
+
+PROHIBITED WITHOUT WRITTEN PERMISSION:
+- Copying, reproducing, or redistributing the Work or any substantial portion
+  of it, whether in source or compiled form.
+- Creating derivative works based on the Work.
+- Hosting, deploying, or publishing the Work or derivative works on any
+  platform, including but not limited to GitHub, Vercel, Netlify, or any CDN.
+- Using the Work or any portion of it for commercial purposes.
+- Sublicensing, selling, or transferring the Work to any third party.
+
+The fact that this repository is publicly visible on GitHub does not constitute
+a licence to use, copy, modify, or distribute the Work. GitHub's Terms of
+Service permit viewing public repositories, but copying for the above purposes
+is explicitly prohibited.
+
+For licensing enquiries: nxtcraft.tools@gmail.com
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE.
