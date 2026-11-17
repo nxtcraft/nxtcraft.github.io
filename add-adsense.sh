@@ -5,7 +5,7 @@
 # Adds Google AdSense auto-ads script to ALL nxtcraft tool index.html files
 # and commits + pushes each repo.
 #
-# Prerequisites: PAT in /Users/pradeepkumarkesharwani/vscode-code/saasscout/.env
+# Prerequisites: PAT in $HOME/vscode-code/saasscout/.env
 
 set -e
 
@@ -16,7 +16,7 @@ if [ -z "$PUB_ID" ]; then
   exit 1
 fi
 
-PAT=$(grep GITHUB_PAT /Users/pradeepkumarkesharwani/vscode-code/saasscout/.env | cut -d= -f2 | tr -d '[:space:]')
+PAT=$(grep GITHUB_PAT $HOME/vscode-code/saasscout/.env | cut -d= -f2 | tr -d '[:space:]')
 
 ADSENSE_SCRIPT="<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${PUB_ID}\" crossorigin=\"anonymous\"></script>"
 
@@ -56,7 +56,7 @@ declare -A REPOS=(
   ["ai-transcribe"]="ai-transcribe"
 )
 
-BASE="/Users/pradeepkumarkesharwani/vscode-code"
+BASE="$HOME/vscode-code"
 GIT_EMAIL="249218787+nxtcraft@users.noreply.github.com"
 GIT_NAME="nxtcraft"
 
